@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://shuxiaohao.github.io/"/>
-  <updated>2018-08-30T14:01:41.523Z</updated>
+  <updated>2018-09-01T12:12:11.502Z</updated>
   <id>http://shuxiaohao.github.io/</id>
   
   <author>
@@ -21,16 +21,16 @@
     <link href="http://shuxiaohao.github.io/2018/08/30/blog/"/>
     <id>http://shuxiaohao.github.io/2018/08/30/blog/</id>
     <published>2018-08-30T12:17:02.000Z</published>
-    <updated>2018-08-30T14:01:41.523Z</updated>
+    <updated>2018-09-01T12:12:11.502Z</updated>
     
-    <content type="html"><![CDATA[<p>my first blog</p>]]></content>
+    <content type="html"><![CDATA[<p>前言<br>平时在使用 nodejs 去 require 的时候是不是有使用绝对路径或者相对路径去引用，那么 nodejs 解析路径顺序是怎么样的呢？接下来我会讲一下 nodejs 路径解析顺序</p><p>相对路径解析顺序<br>假设有一个文件路径为 /root/src/moduleA.js，包含了一个导入var x = require(“./moduleB”);, 也就是导入了一个相对路径的一个模块，那么Node.js以下面的顺序解析这个导入：</p><p>到/root/src/moduleB.js这个路径是否存在，如果不存在进入下一步。<br>检查/root/src/moduleB 目录是否包含一个package.json文件，且package.json文件指定了一个”main”模块,比如 ，Node.js发现文件 /root/src/moduleB/package.json 包含了 { “main”: “lib/mainModule.js” },那么 nodejs 就会去 /root/src/moduleB/lib/mainModule.js<br>如果没有 main 字段,nodejs会检查/root/src/moduleB目录是否包含一个 index.js 文件。 这个文件会被隐式地当作那个文件夹下的”main”模块。<br>绝对路径解析顺序<br>假设有一个文件路径为/root/src/moduleA.js，里面包含了一个导入var x = require(“moduleB”);，也就是绝对路径的一个模块，那么Node.js以下面的顺序解析这个导入：</p><p>/root/src/node_modules/moduleB.js<br>/root/src/node_modules/moduleB/package.json（里面指定了 main 字段，跟上面相对路径是一样的）<br>/root/src/node_modules/moduleB/index.js<br>如果上面三个没有找到，往上一级目录找：<br>/root/node_modules/moduleB.js<br>/root/node_modules/moduleB/package.json<br>/root/node_modules/moduleB/index.js<br>如果还没有找到，继续往上一级找：<br>/node_modules/moduleB.js<br>/node_modules/moduleB/package.json<br>/node_modules/moduleB/index.js</p>]]></content>
     
     <summary type="html">
     
       
       
-        &lt;p&gt;my first blog&lt;/p&gt;
-
+        &lt;p&gt;前言&lt;br&gt;平时在使用 nodejs 去 require 的时候是不是有使用绝对路径或者相对路径去引用，那么 nodejs 解析路径顺序是怎么样的呢？接下来我会讲一下 nodejs 路径解析顺序&lt;/p&gt;
+&lt;p&gt;相对路径解析顺序&lt;br&gt;假设有一个文件路径为 /root/src
       
     
     </summary>
