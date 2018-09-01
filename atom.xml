@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+  <title>Haroy</title>
+  
+  <subtitle>舒豪的个人博客</subtitle>
+  <link href="/atom.xml" rel="self"/>
+  
+  <link href="http://shuxiaohao.github.io/"/>
+  <updated>2018-08-30T14:01:41.523Z</updated>
+  <id>http://shuxiaohao.github.io/</id>
+  
+  <author>
+    <name>Shu Hao</name>
+    
+  </author>
+  
+  <generator uri="http://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>blog</title>
+    <link href="http://shuxiaohao.github.io/2018/08/30/blog/"/>
+    <id>http://shuxiaohao.github.io/2018/08/30/blog/</id>
+    <published>2018-08-30T12:17:02.000Z</published>
+    <updated>2018-08-30T14:01:41.523Z</updated>
+    
+    <content type="html"><![CDATA[<p>my first blog</p>]]></content>
+    
+    <summary type="html">
+    
+      
+      
+        &lt;p&gt;my first blog&lt;/p&gt;
+
+      
+    
+    </summary>
+    
+      <category term="Diary" scheme="http://shuxiaohao.github.io/categories/Diary/"/>
+    
+    
+      <category term="PS3" scheme="http://shuxiaohao.github.io/tags/PS3/"/>
+    
+      <category term="Games" scheme="http://shuxiaohao.github.io/tags/Games/"/>
+    
+  </entry>
+  
+</feed>
