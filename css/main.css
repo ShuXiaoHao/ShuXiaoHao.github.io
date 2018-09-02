@@ -1120,6 +1120,10 @@ pre .javascript .function {
   display: inline-block;
   margin: 10px;
 }
+.tag-cloud a:hover {
+  border-bottom-color: #f5f5f5;
+  color: #f5f5f5;
+}
 .back-to-top {
   box-sizing: border-box;
   position: fixed;
@@ -1255,7 +1259,7 @@ pre .javascript .function {
   margin-top: 20px;
   padding-left: 0;
   text-align: center;
-  background: rgba(255,255,255,0.65);
+  background: rgba(255,255,255,0);
   margin-left: auto;
   margin-right: auto;
   width: 450px;
@@ -1283,8 +1287,8 @@ pre .javascript .function {
   transition-delay: 0s;
 }
 .menu .menu-item a:hover {
-  border-bottom-color: #222;
-  color: #222;
+  border-bottom-color: #f5f5f5;
+  color: #f5f5f5;
 }
 .menu .menu-item .fa {
   margin-right: 5px;
@@ -1520,6 +1524,10 @@ pre .javascript .function {
   color: #666;
   border-bottom: none;
 }
+.posts-collapse .post-title a:hover {
+  border-bottom-color: #f5f5f5;
+  color: #f5f5f5;
+}
 .page-home .post-type-quote .post-header,
 .page-post-detail .post-type-quote .post-header,
 .page-home .post-type-quote .post-tags,
@@ -1530,12 +1538,13 @@ pre .javascript .function {
   text-align: center;
   word-break: break-word;
   font-weight: 400;
+  color: #f5f5f5;
 }
 .posts-expand .post-title-link {
   display: inline-block;
   position: relative;
-  color: #555;
-  border-bottom: none;
+  color: #f5f5f5;
+  border-bottom: #f5f5f5;
   line-height: 1.2;
   vertical-align: top;
 }
@@ -1546,7 +1555,7 @@ pre .javascript .function {
   height: 2px;
   bottom: 0;
   left: 0;
-  background-color: #000;
+  background-color: #f5f5f5;
   visibility: hidden;
   -webkit-transform: scaleX(0);
   -moz-transform: scaleX(0);
@@ -1580,12 +1589,20 @@ pre .javascript .function {
   margin: 0;
   padding: 3px;
 }
+.posts-expand .post-meta .post-category-list a:hover {
+  border-bottom-color: #f5f5f5;
+  color: #f5f5f5;
+}
 .posts-expand .post-meta .post-category-list-link {
   color: #999;
 }
 .posts-expand .post-meta .post-description {
   font-size: 14px;
   margin-top: 2px;
+}
+.posts-expand .post-meta a:hover {
+  border-bottom-color: #f5f5f5;
+  color: #f5f5f5;
 }
 .post-wordcount {
   display: inline-block;
@@ -1632,6 +1649,10 @@ pre .javascript .function {
   display: inline-block;
   margin-right: 10px;
   font-size: 13px;
+}
+.posts-expand .post-tags a:hover {
+  border-bottom-color: #f5f5f5;
+  color: #f5f5f5;
 }
 .post-nav {
   display: table;
@@ -1724,6 +1745,10 @@ pre .javascript .function {
   border-left: 3px solid #ff1700;
   background-color: #f9f9f9;
   list-style: none;
+}
+.post-copyright a:hover {
+  border-bottom-color: #f5f5f5;
+  color: #f5f5f5;
 }
 .post-widgets {
   border-top: 1px solid #eee;
@@ -1952,7 +1977,7 @@ pre .javascript .function {
   width: 4px;
   height: 4px;
   border-radius: 50%;
-  background: #95b0ff;
+  background: #9506ff;
 }
 .links-of-blogroll {
   font-size: 13px;
@@ -2576,6 +2601,10 @@ pre .javascript .function {
 .category-all-page .category-list-item {
   margin: 5px 10px;
 }
+.category-all-page .category-list-item a:hover {
+  border-bottom-color: #f5f5f5;
+  color: #f5f5f5;
+}
 .category-all-page .category-list-count {
   color: #bbb;
 }
@@ -2839,6 +2868,7 @@ embed {
   display: inline-block;
 }
 body {
+  background: url("/images/2.png") no-repeat;
 /* 背景图垂直、水平均居中 */
   background-position: center center;
 /* 当内容高度大于图片高度时，背景图像的位置相对于viewport固定 */
@@ -2847,6 +2877,11 @@ body {
   background-size: cover;
 /* 设置背景颜色，背景图加载过程中会显示背景色 */
   background-color: rgba(0,0,0,0);
+}
+.content {
+  border-radius: 20px;
+  padding: 30px 60px 30px 60px;
+  background: rgba(255,255,255,0.1) none repeat scroll !important;
 }
 #sidebar {
   background: url("/images/right2.jpg");
@@ -2888,5 +2923,16 @@ body {
 #lv-container {
   border-radius: 20px;
   padding: 30px 60px 30px 60px;
-  background: rgba(255,255,255,0.8) none repeat scroll !important;
+  background: rgba(255,255,255,0.1) none repeat scroll !important;
+}
+.post-copyright {
+  background: rgba(255,255,255,0.1) none repeat scroll !important;
+}
+#animate {
+  animation: iconAnimate 1.33s ease-in-out infinite;
+}
+.with-love {
+  display: inline-block;
+  margin: 0 5px;
+  color: #f00;
 }
