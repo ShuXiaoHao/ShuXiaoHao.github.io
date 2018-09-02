@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://shuxiaohao.github.io/"/>
-  <updated>2018-09-01T16:27:51.559Z</updated>
+  <updated>2018-09-02T09:23:27.066Z</updated>
   <id>http://shuxiaohao.github.io/</id>
   
   <author>
@@ -17,20 +17,52 @@
   <generator uri="http://hexo.io/">Hexo</generator>
   
   <entry>
-    <title>firstBlog</title>
-    <link href="http://shuxiaohao.github.io/2018/09/01/2018-09-01-firstBlog/"/>
-    <id>http://shuxiaohao.github.io/2018/09/01/2018-09-01-firstBlog/</id>
-    <published>2018-09-01T15:59:59.000Z</published>
-    <updated>2018-09-01T16:27:51.559Z</updated>
+    <title>blogComplete</title>
+    <link href="http://shuxiaohao.github.io/2018/09/02/2018-09-02-blogComplete/"/>
+    <id>http://shuxiaohao.github.io/2018/09/02/2018-09-02-blogComplete/</id>
+    <published>2018-09-02T09:03:05.000Z</published>
+    <updated>2018-09-02T09:23:27.066Z</updated>
     
-    <content type="html"><![CDATA[<pre><code>我有自己的博客啦，睡觉！</code></pre>]]></content>
+    <content type="html"><![CDATA[<p>   有点神奇啊 </p>]]></content>
     
     <summary type="html">
     
       
       
-        &lt;pre&gt;&lt;code&gt;我有自己的博客啦，睡觉！
-&lt;/code&gt;&lt;/pre&gt;
+        &lt;p&gt;   有点神奇啊 &lt;/p&gt;
+
+      
+    
+    </summary>
+    
+      <category term="随笔" scheme="http://shuxiaohao.github.io/categories/%E9%9A%8F%E7%AC%94/"/>
+    
+    
+      <category term="happy" scheme="http://shuxiaohao.github.io/tags/happy/"/>
+    
+      <category term="mod" scheme="http://shuxiaohao.github.io/tags/mod/"/>
+    
+      <category term="k8s" scheme="http://shuxiaohao.github.io/tags/k8s/"/>
+    
+      <category term="Another Tag" scheme="http://shuxiaohao.github.io/tags/Another-Tag/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>firstBlog</title>
+    <link href="http://shuxiaohao.github.io/2018/09/01/2018-09-01-firstBlog/"/>
+    <id>http://shuxiaohao.github.io/2018/09/01/2018-09-01-firstBlog/</id>
+    <published>2018-09-01T15:59:59.000Z</published>
+    <updated>2018-09-02T09:11:16.975Z</updated>
+    
+    <content type="html"><![CDATA[<p>   什么情况</p>]]></content>
+    
+    <summary type="html">
+    
+      
+      
+        &lt;p&gt;   什么情况&lt;/p&gt;
+
       
     
     </summary>
