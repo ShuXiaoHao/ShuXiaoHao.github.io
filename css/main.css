@@ -1977,7 +1977,7 @@ pre .javascript .function {
   width: 4px;
   height: 4px;
   border-radius: 50%;
-  background: #ff06f4;
+  background: #133378;
 }
 .links-of-blogroll {
   font-size: 13px;
@@ -2879,8 +2879,8 @@ body {
   background-color: rgba(0,0,0,0);
 }
 .content {
-  margin-left: -100px !important;
-  margin-right: -100px !important;
+  margin-left: -10% !important;
+  margin-right: -10% !important;
   border-radius: 20px;
   padding: 15px 30px 15px 30px !important;
   background: rgba(255,255,255,0.1) none repeat scroll !important;
@@ -2923,10 +2923,10 @@ body {
   float: right;
 }
 #lv-container {
-  margin-left: -100px !important;
-  margin-right: -100px !important;
+  margin-left: -10% !important;
+  margin-right: -10% !important;
   border-radius: 20px;
-  padding: 15px 30px 15px 30px !important;
+  padding: 30px 60px 30px 60px !important;
   background: rgba(255,255,255,0) none repeat scroll !important;
 }
 .post-copyright {
