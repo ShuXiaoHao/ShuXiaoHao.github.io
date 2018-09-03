@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://shuxiaohao.github.io/"/>
-  <updated>2018-09-02T09:23:27.066Z</updated>
+  <updated>2018-09-03T15:42:19.740Z</updated>
   <id>http://shuxiaohao.github.io/</id>
   
   <author>
@@ -17,58 +17,24 @@
   <generator uri="http://hexo.io/">Hexo</generator>
   
   <entry>
-    <title>blogComplete</title>
-    <link href="http://shuxiaohao.github.io/2018/09/02/2018-09-02-blogComplete/"/>
-    <id>http://shuxiaohao.github.io/2018/09/02/2018-09-02-blogComplete/</id>
-    <published>2018-09-02T09:03:05.000Z</published>
-    <updated>2018-09-02T09:23:27.066Z</updated>
+    <title>Git基础及常用命令总结</title>
+    <link href="http://shuxiaohao.github.io/2018/09/03/Git%E5%9F%BA%E7%A1%80%E5%8F%8A%E5%B8%B8%E7%94%A8%E5%91%BD%E4%BB%A4%E6%80%BB%E7%BB%93/"/>
+    <id>http://shuxiaohao.github.io/2018/09/03/Git基础及常用命令总结/</id>
+    <published>2018-09-03T09:45:15.000Z</published>
+    <updated>2018-09-03T15:42:19.740Z</updated>
     
-    <content type="html"><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="/assets/css/APlayer.min.css"><script src="/assets/js/APlayer.min.js" class="aplayer-secondary-script-marker"></script><p>   有点神奇啊 </p>]]></content>
-    
-    <summary type="html">
-    
-      
-      
-        &lt;link rel=&quot;stylesheet&quot; class=&quot;aplayer-secondary-style-marker&quot; href=&quot;/assets/css/APlayer.min.css&quot;&gt;&lt;script src=&quot;/assets/js/APlayer.min.js&quot; cla
-      
-    
-    </summary>
-    
-      <category term="随笔" scheme="http://shuxiaohao.github.io/categories/%E9%9A%8F%E7%AC%94/"/>
-    
-    
-      <category term="happy" scheme="http://shuxiaohao.github.io/tags/happy/"/>
-    
-      <category term="mod" scheme="http://shuxiaohao.github.io/tags/mod/"/>
-    
-      <category term="k8s" scheme="http://shuxiaohao.github.io/tags/k8s/"/>
-    
-      <category term="Another Tag" scheme="http://shuxiaohao.github.io/tags/Another-Tag/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>firstBlog</title>
-    <link href="http://shuxiaohao.github.io/2018/09/01/2018-09-01-firstBlog/"/>
-    <id>http://shuxiaohao.github.io/2018/09/01/2018-09-01-firstBlog/</id>
-    <published>2018-09-01T15:59:59.000Z</published>
-    <updated>2018-09-02T13:31:33.117Z</updated>
-    
-    <content type="html"><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="/assets/css/APlayer.min.css"><script src="/assets/js/APlayer.min.js" class="aplayer-secondary-script-marker"></script><p>   什么情况</p>]]></content>
+    <content type="html"><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="/assets/css/APlayer.min.css"><script src="/assets/js/APlayer.min.js" class="aplayer-secondary-script-marker"></script> <span itemprop="image" itemscope="" itemtype="http://schema.org/ImageObject"><img itemprop="url image" src="/images/git_logo.jpg" class="full-image"><meta itemprop="width" content="auto"><meta itemprop="height" content="auto"></span><a id="more"></a><div class="note success"><p>Git我已经用了很久了，但最近同事工作期间还会出现一些由于Git代码提交的冲突，带来一些麻烦。<br>    下面我会结合我所学知识，及对Git再系统学习后总结一下Git的一些基本流程及常用命令的一些用法。</p></div><h1 id="本地基本命令"><a href="#本地基本命令" class="headerlink" title="本地基本命令"></a>本地基本命令</h1><h2 id="Git常用命令速查表"><a href="#Git常用命令速查表" class="headerlink" title="Git常用命令速查表"></a>Git常用命令速查表</h2><p><img src="/images/git常用命令速查表.jpg" alt="git常用命令速查表"></p>]]></content>
     
     <summary type="html">
     
-      
-      
-        &lt;link rel=&quot;stylesheet&quot; class=&quot;aplayer-secondary-style-marker&quot; href=&quot;/assets/css/APlayer.min.css&quot;&gt;&lt;script src=&quot;/assets/js/APlayer.min.js&quot; cla
-      
+      &lt;span itemprop=&quot;image&quot; itemscope=&quot;&quot; itemtype=&quot;http://schema.org/ImageObject&quot;&gt;&lt;img itemprop=&quot;url image&quot; src=&quot;/images/git_logo.jpg&quot; class=&quot;full-image&quot;&gt;&lt;meta itemprop=&quot;width&quot; content=&quot;auto&quot;&gt;&lt;meta itemprop=&quot;height&quot; content=&quot;auto&quot;&gt;&lt;/span&gt;
     
     </summary>
     
-      <category term="随笔" scheme="http://shuxiaohao.github.io/categories/%E9%9A%8F%E7%AC%94/"/>
+      <category term="团队协作" scheme="http://shuxiaohao.github.io/categories/%E5%9B%A2%E9%98%9F%E5%8D%8F%E4%BD%9C/"/>
     
     
-      <category term="心情" scheme="http://shuxiaohao.github.io/tags/%E5%BF%83%E6%83%85/"/>
+      <category term="Git" scheme="http://shuxiaohao.github.io/tags/Git/"/>
     
   </entry>
   
