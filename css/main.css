@@ -1952,7 +1952,7 @@ pre .javascript .function {
   width: 4px;
   height: 4px;
   border-radius: 50%;
-  background: #66ba08;
+  background: #eda1c3;
 }
 .links-of-blogroll {
   font-size: 13px;
@@ -2841,6 +2841,8 @@ embed {
 .header {
   background: url("/images/2.png") no-repeat;
   background-size: 100% 100%;
+  position: relative;
+  z-index: -1;
 }
 .content {
   margin-left: -5% !important;
