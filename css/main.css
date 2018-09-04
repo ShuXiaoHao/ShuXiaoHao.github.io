@@ -1952,7 +1952,7 @@ pre .javascript .function {
   width: 4px;
   height: 4px;
   border-radius: 50%;
-  background: #5de4d9;
+  background: #66ba08;
 }
 .links-of-blogroll {
   font-size: 13px;
@@ -2838,15 +2838,9 @@ embed {
 .links-of-blogroll-inline .links-of-blogroll-item {
   display: inline-block;
 }
-body {
+.header {
   background: url("/images/2.png") no-repeat;
-/* 背景图垂直、水平均居中 */
-  background-position: top center;
-/* 当内容高度大于图片高度时，背景图像的位置相对于viewport固定 */
-/* 让背景图基于容器大小伸缩 */
-  background-size: 100% 50%;
-/* 设置背景颜色，背景图加载过程中会显示背景色 */
-  background-color: rgba(0,0,0,0);
+  background-size: 100% 100%;
 }
 .content {
   margin-left: -5% !important;
