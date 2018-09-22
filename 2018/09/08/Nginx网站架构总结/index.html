@@ -123,7 +123,7 @@
 
 
 
-  <meta name="keywords" content="Hexo, NexT" />
+  <meta name="keywords" content="Nginx," />
 
 
 
@@ -136,14 +136,22 @@
 
 
 
-<meta property="og:type" content="website">
-<meta property="og:title" content="标签">
-<meta property="og:url" content="http://shuxiaohao.github.io/tags/index.html">
+<meta name="description" content="单台服务器已经无法承担大量用户的并发访问，必须采用多台服务器协同工作，以提高计算机系统的处理能力和计算强度（集群），满足当前业务量的需求。如何完成同样功能的多个网络设备之间实现合理的业务量分配——负载均衡。">
+<meta name="keywords" content="Nginx">
+<meta property="og:type" content="article">
+<meta property="og:title" content="Nginx网站架构总结">
+<meta property="og:url" content="http://shuxiaohao.github.io/2018/09/08/Nginx网站架构总结/index.html">
 <meta property="og:site_name" content="Haroy">
+<meta property="og:description" content="单台服务器已经无法承担大量用户的并发访问，必须采用多台服务器协同工作，以提高计算机系统的处理能力和计算强度（集群），满足当前业务量的需求。如何完成同样功能的多个网络设备之间实现合理的业务量分配——负载均衡。">
 <meta property="og:locale" content="zh-Hans">
-<meta property="og:updated_time" content="2018-09-02T02:43:36.179Z">
+<meta property="og:image" content="http://shuxiaohao.github.io/images/nginx/nginx.jpg">
+<meta property="og:image" content="http://shuxiaohao.github.io/images/nginx/nginx3.jpg">
+<meta property="og:image" content="http://shuxiaohao.github.io/images/nginx/nginx4.jpg">
+<meta property="og:updated_time" content="2018-09-22T06:51:41.756Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="标签">
+<meta name="twitter:title" content="Nginx网站架构总结">
+<meta name="twitter:description" content="单台服务器已经无法承担大量用户的并发访问，必须采用多台服务器协同工作，以提高计算机系统的处理能力和计算强度（集群），满足当前业务量的需求。如何完成同样功能的多个网络设备之间实现合理的业务量分配——负载均衡。">
+<meta name="twitter:image" content="http://shuxiaohao.github.io/images/nginx/nginx.jpg">
 
 
 
@@ -173,13 +181,13 @@
 
 
 
-  <link rel="canonical" href="http://shuxiaohao.github.io/tags/"/>
+  <link rel="canonical" href="http://shuxiaohao.github.io/2018/09/08/Nginx网站架构总结/"/>
 
 
 
 
 
-  <title>标签 | Haroy</title>
+  <title>Nginx网站架构总结 | Haroy</title>
   
 
 
@@ -326,40 +334,292 @@
 
   <div id="posts" class="posts-expand">
     
+
+  
+
+  
+  
+  
+
+  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
+  
+  
+  
+  <div class="post-block">
+    <link itemprop="mainEntityOfPage" href="http://shuxiaohao.github.io/2018/09/08/Nginx网站架构总结/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="name" content="Shu Hao">
+      <meta itemprop="description" content="">
+      <meta itemprop="image" content="/images/headImage.jpeg">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="Haroy">
+    </span>
+
     
-    
-    <div class="post-block page">
       <header class="post-header">
 
-	<h2 class="post-title" itemprop="name headline">标签</h2>
-
-
-
-</header>
-
-      
-      
-      
-      <div class="post-body">
         
         
-          <div class="tag-cloud">
-            <div class="tag-cloud-title">
-                目前共计 2 个标签
-            </div>
-            <div class="tag-cloud-tags">
-              <a href="/tags/Git/" style="font-size: 12px; color: #ccc">Git</a> <a href="/tags/Nginx/" style="font-size: 12px; color: #ccc">Nginx</a>
-            </div>
-          </div>
+          <h2 class="post-title" itemprop="name headline">Nginx网站架构总结</h2>
         
-      </div>
+
+        <div class="post-meta">
+          <span class="post-time">
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">发表于</span>
+              
+              <time title="创建于" itemprop="dateCreated datePublished" datetime="2018-09-08T11:30:47+08:00">
+                2018-09-08
+              </time>
+            
+
+            
+              <span class="post-meta-divider">|</span>
+            
+
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-check-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">更新于&#58;</span>
+              
+              <time title="更新于" itemprop="dateModified" datetime="2018-09-22T14:51:41+08:00">
+                2018-09-22
+              </time>
+            
+          </span>
+
+          
+            <span class="post-category" >
+            
+              <span class="post-meta-divider">|</span>
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-folder-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">分类于</span>
+              
+              
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+                  <a href="/categories/Nginx/" itemprop="url" rel="index">
+                    <span itemprop="name">Nginx</span>
+                  </a>
+                </span>
+
+                
+                
+              
+            </span>
+          
+
+          
+            
+          
+
+          
+          
+             <span id="/2018/09/08/Nginx网站架构总结/" class="leancloud_visitors" data-flag-title="Nginx网站架构总结">
+               <span class="post-meta-divider">|</span>
+               <span class="post-meta-item-icon">
+                 <i class="fa fa-eye"></i>
+               </span>
+               
+                 <span class="post-meta-item-text">阅读次数&#58;</span>
+               
+                 <span class="leancloud-visitors-count"></span>
+             </span>
+          
+
+          
+
+          
+
+          
+
+        </div>
+      </header>
+    
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
       
       
+
+      
+         <span itemprop="image" itemscope="" itemtype="http://schema.org/ImageObject"><img itemprop="url image" src="/images/nginx/nginx.jpg" class="full-image"><meta itemprop="width" content="auto"><meta itemprop="height" content="auto"></span>
+<blockquote>
+<p>单台服务器已经无法承担大量用户的并发访问，必须采用多台服务器协同工作，以提高计算机系统的处理能力和计算强度（集群），满足当前业务量的需求。如何完成同样功能的多个网络设备之间实现合理的业务量分配——负载均衡。</p>
+</blockquote>
+<a id="more"></a>
+<h1 id="Nginx应用场景"><a href="#Nginx应用场景" class="headerlink" title="Nginx应用场景"></a>Nginx应用场景</h1><h2 id="静态HTTP服务器"><a href="#静态HTTP服务器" class="headerlink" title="静态HTTP服务器"></a>静态HTTP服务器</h2><blockquote>
+<p>首先，Nginx是一个HTTP服务器，可以将服务器上的静态文件（如HTML、图片）通过HTTP协议展现给客户端。</p>
+</blockquote>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line">server &#123;</span><br><span class="line">    listen 80; # 端口号</span><br><span class="line">    location / &#123;</span><br><span class="line">        root /usr/share/nginx/html; # 静态文件路径</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<h2 id="虚拟主机"><a href="#虚拟主机" class="headerlink" title="虚拟主机"></a>虚拟主机</h2><blockquote>
+<p>有的网站访问量大，需要负载均衡。然而并不是所有网站都如此出色，有的网站，由于访问量太小，需要节省成本，将多个网站部署在同一台服务器上。<br> 例如将<code>www.aaa.com</code>和<code>www.bbb.com</code>两个网站部署在同一台服务器上，两个域名解析到同一个IP地址，但是用户通过两个域名却可以打开两个完全不同的网站，互相不影响，就像访问两个服务器一样，所以叫两个虚拟主机。<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br></pre></td><td class="code"><pre><span class="line">server &#123;</span><br><span class="line">    listen 80 default_server;</span><br><span class="line">    server_name _;</span><br><span class="line">    return 444; # 过滤其他域名的请求，返回444状态码</span><br><span class="line">&#125;</span><br><span class="line">server &#123;</span><br><span class="line">    listen 80;</span><br><span class="line">    server_name www.aaa.com; # www.aaa.com域名</span><br><span class="line">    location / &#123;</span><br><span class="line">        proxy_pass http://localhost:8080; # 对应端口号8080</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br><span class="line">server &#123;</span><br><span class="line">    listen 80;</span><br><span class="line">    server_name www.bbb.com; # www.bbb.com域名</span><br><span class="line">    location / &#123;</span><br><span class="line">        proxy_pass http://localhost:8081; # 对应端口号8081</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure></p>
+</blockquote>
+<blockquote>
+<p>在服务器8080和8081分别开了一个应用，客户端通过不同的域名访问，根据server_name可以反向代理到对应的应用服务器。<br> 虚拟主机的原理是通过HTTP请求头中的Host是否匹配server_name来实现的，有兴趣的同学可以研究一下HTTP协议。<br> 另外，server_name配置还可以过滤有人恶意将某些域名指向你的主机服务器</p>
+</blockquote>
+<h2 id="反向代理，负载均衡"><a href="#反向代理，负载均衡" class="headerlink" title="反向代理，负载均衡"></a>反向代理，负载均衡</h2><blockquote>
+<p>当网站的访问量达到一定程度后，单台服务器不能满足用户的请求时，<br>需要用多台服务器集群可以使用nginx做反向代理。并且多台服务器可以平均分担负载，<br>不会因为某台服务器负载高宕机而某台服务器闲置的情况。</p>
+</blockquote>
+<h3 id="正向代理VS反向代理"><a href="#正向代理VS反向代理" class="headerlink" title="正向代理VS反向代理"></a>正向代理VS反向代理</h3><blockquote>
+<p>反向代理是指：以代理服务器来接受Internet上的连接请求，然后将请求转发给内部网络上的服务器，并将从服务器上得到的结果返回给Internet上请求链接的客户端。<br> 正向代理：代理服务器代理内部网络对Internet的连接请求，客户机必须指定代理服务器，并将本来要直接发送到Web服务器上的http请求发送到代理服务器中。因为请求哪个Web服务器是不确定的，而且这些Web服务器并没有配置这个代理服务器，所以不支持外部对内部网络的访问请求</p>
+</blockquote>
+<span itemprop="image" itemscope="" itemtype="http://schema.org/ImageObject"><img itemprop="url image" src="/images/nginx/nginx3.jpg" class="full-image"><meta itemprop="width" content="auto"><meta itemprop="height" content="auto"></span>
+<span itemprop="image" itemscope="" itemtype="http://schema.org/ImageObject"><img itemprop="url image" src="/images/nginx/nginx4.jpg" class="full-image"><meta itemprop="width" content="auto"><meta itemprop="height" content="auto"></span>
+<h3 id="反向代理VS负载均衡"><a href="#反向代理VS负载均衡" class="headerlink" title="反向代理VS负载均衡"></a>反向代理VS负载均衡</h3><blockquote>
+<p>反向代理，是把一些静态资源存储在服务器上，当用户有请求的时候，就直接返回反向代理服务器上的资源给用户，而如果反向代理服务器上没有的资源，就转发给后面的负载均衡服务器，负载均衡服务器再将请求分发给后端的web服务器。<br>区别就是：反向代理服务器是需要存储资源的，让用户更快速的接收到资源 负载均衡就是，为了保证后端web服务器的高可用，高并发，是不需要要存储资源，只需要转发用户的请求。<br> <figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br></pre></td><td class="code"><pre><span class="line">upstream myapp &#123;</span><br><span class="line">    server 192.168.0.111:8080; # 应用服务器1</span><br><span class="line">    server 192.168.0.112:8080; # 应用服务器2</span><br><span class="line">&#125;</span><br><span class="line">server &#123;</span><br><span class="line">    listen 80;</span><br><span class="line">    location / &#123;</span><br><span class="line">        proxy_pass http://myweb;</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure></p>
+</blockquote>
+<h3 id="负载均衡策略-算法"><a href="#负载均衡策略-算法" class="headerlink" title="负载均衡策略/算法"></a>负载均衡策略/算法</h3><blockquote>
+<ul>
+<li>轮询：依次分发到每台应用服务器上，所以每台处理请求数相同</li>
+<li>加权轮询：按照配置的权重将请求分发，高性能的服务器分配更多请求。</li>
+<li>随机：随机分配</li>
+<li>加权随机：</li>
+<li>最少连接：记录每个应用服务器正在处理的连接数，将新的请求分发到最少连接的服务器上。</li>
+<li>加权最少连接</li>
+<li>源地址散列：根据来源的IP地址进行Hash计算得到应用服务器，这样来自同一个IP地址的请求总在同一个服务器上处理。该请求的上下文信息可以存储在这台服务器上</li>
+</ul>
+</blockquote>
+<h2 id="Nginx实践"><a href="#Nginx实践" class="headerlink" title="Nginx实践"></a>Nginx实践</h2><h3 id="session共享问题"><a href="#session共享问题" class="headerlink" title="session共享问题"></a>session共享问题</h3><blockquote>
+<ol>
+<li>不使用session，换用cookie,这样虽然实现简单，但是把session存在客户端会有很大的问题，如果客户端把cookie禁掉了的话，那么session就无从同步了，这样会给网站带来损失；cookie的安全性不高，虽然它已经加了密，但是还是可以伪造的。</li>
+<li>可以通过ip_hash，将某个ip的请求定向到同一台后端应用服务器。但是这样可能会失去负载均衡的意义，因为有可能有的ip请求会很大，但是都分发到了一个服务器处理。</li>
+<li>session复制，通过一次产生session就把这个session复制到其他服务器中，这样也会解决session一致性问题，但是这个会占用比较大的资源。</li>
+<li>通过中间间做session缓存如用redis，这样没错分发到的服务器都从缓存里取一下看是否有session存在，达到session一致性，当然这个就会额外增加网络请求。</li>
+</ol>
+</blockquote>
+<h3 id="nginx双机高可用"><a href="#nginx双机高可用" class="headerlink" title="nginx双机高可用"></a>nginx双机高可用</h3><blockquote>
+<p>防止一台nginx宕掉，加一台备用机。<br> 方案一：正常情况下只有一台用于负载均衡，另一台空闲。可以用keepalive软件实现一台出问题时切换到另一台。<br> 方案二：两台都用于负载均衡。</p>
+</blockquote>
+<h2 id="Nginx常用命令"><a href="#Nginx常用命令" class="headerlink" title="Nginx常用命令"></a>Nginx常用命令</h2><blockquote>
+<ul>
+<li>启动nginx:<code>nginx</code></li>
+<li>停止nginx:<code>nginx -s stop</code> 强制停止，`nginx -s quit 优雅的退出</li>
+<li>重载配置config:<code>nginx -s reload</code><div class="note info"><p><code>-s</code>都是采用向 Nginx 发送信号的方式</p></div></li>
+<li>指定配置文件:<code>nginx -c /usr/local/......</code><div class="note info"><p><code>-c</code>表示configuration，指定配置文件</p></div></li>
+<li>查看nginx版本信息:<code>nginx -v</code>,详细信息<code>nginx -V</code></li>
+<li>检查配置文件是否正确:<code>nginx -t</code></li>
+<li>显示帮助信息<code>nginx -h</code>或者<code>nginx -?</code></li>
+</ul>
+</blockquote>
+
       
     </div>
     
     
     
+
+    <div>
+      
+        <div>
+    
+        <div style="text-align:center;color: #ccc;font-size:14px;">-------------本文结束<i class="fa fa-paw"></i>感谢您的阅读-------------</div>
+    
+</div>
+
+      
+    </div>
+
+    
+
+    
+
+    
+      <div>
+        <ul class="post-copyright">
+  <li class="post-copyright-author">
+    <strong>本文作者：</strong>
+    Shu Hao
+  </li>
+  <li class="post-copyright-link">
+    <strong>本文链接：</strong>
+    <a href="http://shuxiaohao.github.io/2018/09/08/Nginx网站架构总结/" title="Nginx网站架构总结">http://shuxiaohao.github.io/2018/09/08/Nginx网站架构总结/</a>
+  </li>
+  <li class="post-copyright-license">
+    <strong>版权声明： </strong>
+    本博客所有文章除特别声明外，均采用 <a href="https://creativecommons.org/licenses/by-nc-sa/3.0/" rel="external nofollow" target="_blank">CC BY-NC-SA 3.0</a> 许可协议。转载请注明出处！
+  </li>
+</ul>
+
+      </div>
+    
+
+
+    <footer class="post-footer">
+      
+        <div class="post-tags">
+          
+            <a href="/tags/Nginx/" rel="tag"><i class="fa fa-tag"></i> Nginx</a>
+          
+        </div>
+      
+
+      
+      
+        <div class="post-widgets">
+        
+
+        
+
+        
+          
+          <div id="needsharebutton-postbottom">
+            <span class="btn">
+              <i class="fa fa-share-alt" aria-hidden="true"></i>
+            </span>
+          </div>
+        
+        </div>
+      
+      
+
+      
+        <div class="post-nav">
+          <div class="post-nav-next post-nav-item">
+            
+              <a href="/2018/09/03/Git基础及常用命令总结/" rel="next" title="Git基础及常用命令总结">
+                <i class="fa fa-chevron-left"></i> Git基础及常用命令总结
+              </a>
+            
+          </div>
+
+          <span class="post-nav-divider"></span>
+
+          <div class="post-nav-prev post-nav-item">
+            
+          </div>
+        </div>
+      
+
+      
+      
+    </footer>
+  </div>
+  
+  
+  
+  </article>
+
+
+
+    <div class="post-spread">
+      
+    </div>
   </div>
 
 
@@ -368,6 +628,15 @@
 
 
           
+
+  
+    <div class="comments" id="comments">
+      <div id="lv-container" data-id="city" data-uid="MTAyMC8zOTQ0MC8xNTk2Nw=="></div>
+    </div>
+
+  
+
+
 
         </div>
         
@@ -390,8 +659,17 @@
       
 
       
+        <ul class="sidebar-nav motion-element">
+          <li class="sidebar-nav-toc sidebar-nav-active" data-target="post-toc-wrap">
+            文章目录
+          </li>
+          <li class="sidebar-nav-overview" data-target="site-overview-wrap">
+            站点概览
+          </li>
+        </ul>
+      
 
-      <section class="site-overview-wrap sidebar-panel sidebar-panel-active">
+      <section class="site-overview-wrap sidebar-panel">
         <div class="site-overview">
           <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
             
@@ -541,6 +819,22 @@ var ap = new APlayer({
 		<!--my custom code end-->
       </section>
 
+      
+      <!--noindex-->
+        <section class="post-toc-wrap motion-element sidebar-panel sidebar-panel-active">
+          <div class="post-toc">
+
+            
+              
+            
+
+            
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#Nginx应用场景"><span class="nav-number">1.</span> <span class="nav-text">Nginx应用场景</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#静态HTTP服务器"><span class="nav-number">1.1.</span> <span class="nav-text">静态HTTP服务器</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#虚拟主机"><span class="nav-number">1.2.</span> <span class="nav-text">虚拟主机</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#反向代理，负载均衡"><span class="nav-number">1.3.</span> <span class="nav-text">反向代理，负载均衡</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#正向代理VS反向代理"><span class="nav-number">1.3.1.</span> <span class="nav-text">正向代理VS反向代理</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#反向代理VS负载均衡"><span class="nav-number">1.3.2.</span> <span class="nav-text">反向代理VS负载均衡</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#负载均衡策略-算法"><span class="nav-number">1.3.3.</span> <span class="nav-text">负载均衡策略/算法</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#Nginx实践"><span class="nav-number">1.4.</span> <span class="nav-text">Nginx实践</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#session共享问题"><span class="nav-number">1.4.1.</span> <span class="nav-text">session共享问题</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#nginx双机高可用"><span class="nav-number">1.4.2.</span> <span class="nav-text">nginx双机高可用</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#Nginx常用命令"><span class="nav-number">1.5.</span> <span class="nav-text">Nginx常用命令</span></a></li></ol></li></ol></div>
+            
+
+          </div>
+        </section>
+      <!--/noindex-->
       
 
       

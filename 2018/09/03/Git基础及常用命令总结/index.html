@@ -142,13 +142,13 @@
 <meta property="og:url" content="http://shuxiaohao.github.io/2018/09/03/Git基础及常用命令总结/index.html">
 <meta property="og:site_name" content="Haroy">
 <meta property="og:locale" content="zh-Hans">
-<meta property="og:image" content="http://shuxiaohao.github.io/images/git_logo.jpg">
-<meta property="og:image" content="http://shuxiaohao.github.io/images/git常用命令速查表.jpg">
-<meta property="og:image" content="http://shuxiaohao.github.io/images/gitdown.jpg">
-<meta property="og:updated_time" content="2018-09-05T14:15:40.636Z">
+<meta property="og:image" content="http://shuxiaohao.github.io/images/git/git_logo.jpg">
+<meta property="og:image" content="http://shuxiaohao.github.io/images/git/git常用命令速查表.jpg">
+<meta property="og:image" content="http://shuxiaohao.github.io/images/git/gitdown.jpg">
+<meta property="og:updated_time" content="2018-09-21T14:09:40.352Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="Git基础及常用命令总结">
-<meta name="twitter:image" content="http://shuxiaohao.github.io/images/git_logo.jpg">
+<meta name="twitter:image" content="http://shuxiaohao.github.io/images/git/git_logo.jpg">
 
 
 
@@ -388,8 +388,8 @@
               
                 <span class="post-meta-item-text">更新于&#58;</span>
               
-              <time title="更新于" itemprop="dateModified" datetime="2018-09-05T22:15:40+08:00">
-                2018-09-05
+              <time title="更新于" itemprop="dateModified" datetime="2018-09-21T22:09:40+08:00">
+                2018-09-21
               </time>
             
           </span>
@@ -455,10 +455,10 @@
       
 
       
-         <span itemprop="image" itemscope="" itemtype="http://schema.org/ImageObject"><img itemprop="url image" src="/images/git_logo.jpg" class="full-image"><meta itemprop="width" content="auto"><meta itemprop="height" content="auto"></span>
+         <span itemprop="image" itemscope="" itemtype="http://schema.org/ImageObject"><img itemprop="url image" src="/images/git/git_logo.jpg" class="full-image"><meta itemprop="width" content="auto"><meta itemprop="height" content="auto"></span>
 <a id="more"></a>
 <div class="note success"><p>Git我已经用了很久了，但最近同事工作期间还会出现一些由于Git代码提交的冲突，带来一些麻烦。<br>    下面我会结合我所学知识，及对Git再系统学习后总结一下Git的一些基本流程及常用命令的一些用法。</p></div>
-<h1 id="本地基本命令"><a href="#本地基本命令" class="headerlink" title="本地基本命令"></a>本地基本命令</h1><h2 id="Git常用命令速查表"><a href="#Git常用命令速查表" class="headerlink" title="Git常用命令速查表:"></a>Git常用命令速查表:</h2><p><img src="/images/git常用命令速查表.jpg" alt="git常用命令速查表"></p>
+<h1 id="本地基本命令"><a href="#本地基本命令" class="headerlink" title="本地基本命令"></a>本地基本命令</h1><h2 id="Git常用命令速查表"><a href="#Git常用命令速查表" class="headerlink" title="Git常用命令速查表:"></a>Git常用命令速查表:</h2><p><img src="/images/git/git常用命令速查表.jpg" alt="git常用命令速查表"></p>
 <h2 id="使用Git生成秘钥"><a href="#使用Git生成秘钥" class="headerlink" title="使用Git生成秘钥"></a>使用Git生成秘钥</h2><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">ssh-keygen -t rsa -C &quot;email@example.com&quot;</span><br></pre></td></tr></table></figure>
 <h2 id="设置全局用户名和邮箱"><a href="#设置全局用户名和邮箱" class="headerlink" title="设置全局用户名和邮箱:"></a>设置全局用户名和邮箱:</h2><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">git config --global user.name &quot;YourName&quot;</span><br><span class="line">git config --global user.email &quot;email@example.com&quot;</span><br></pre></td></tr></table></figure>
 <h2 id="初始化仓库"><a href="#初始化仓库" class="headerlink" title="初始化仓库"></a>初始化仓库</h2><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">git init</span><br></pre></td></tr></table></figure>
@@ -534,7 +534,7 @@
 <h2 id="多人协作技巧"><a href="#多人协作技巧" class="headerlink" title="多人协作技巧"></a>多人协作技巧</h2><blockquote>
 <p>查看远程库信息，使用<code>git remote -v</code>；<br> 本地新建的分支如果不推送到远程，对其他人就是不可见的；<br> 从本地推送分支，使用<code>git push</code> 远程仓库名 分支名，如果推送失败，先用<code>git pull</code>抓取远程的新提交；<br> 在本地创建和远程分支对应的分支，使用<code>git checkout -b branch-name origin/branch-name</code>，本地和远程分支的名称最好一致；<br> 建立本地分支和远程分支的关联，使用<code>git branch --set-upstream branch-name origin/branch-name</code>；<br> 从远程抓取分支，使用<code>git pull</code>，如果有冲突，要先处理冲突。</p>
 </blockquote>
-<h2 id="Git常用命令思维导图"><a href="#Git常用命令思维导图" class="headerlink" title="Git常用命令思维导图"></a>Git常用命令思维导图</h2><p><img src="/images/gitdown.jpg" alt="git常用命令速查表"></p>
+<h2 id="Git常用命令思维导图"><a href="#Git常用命令思维导图" class="headerlink" title="Git常用命令思维导图"></a>Git常用命令思维导图</h2><p><img src="/images/git/gitdown.jpg" alt="git常用命令速查表"></p>
 
       
     </div>
@@ -606,6 +606,22 @@
       
       
 
+      
+        <div class="post-nav">
+          <div class="post-nav-next post-nav-item">
+            
+          </div>
+
+          <span class="post-nav-divider"></span>
+
+          <div class="post-nav-prev post-nav-item">
+            
+              <a href="/2018/09/08/Nginx网站架构总结/" rel="prev" title="Nginx网站架构总结">
+                Nginx网站架构总结 <i class="fa fa-chevron-right"></i>
+              </a>
+            
+          </div>
+        </div>
       
 
       
@@ -703,7 +719,7 @@
               
                 <a href="/archives">
               
-                  <span class="site-state-item-count">1</span>
+                  <span class="site-state-item-count">2</span>
                   <span class="site-state-item-name">日志</span>
                 </a>
               </div>
@@ -714,7 +730,7 @@
               
               <div class="site-state-item site-state-categories">
                 <a href="/categories/index.html">
-                  <span class="site-state-item-count">1</span>
+                  <span class="site-state-item-count">2</span>
                   <span class="site-state-item-name">分类</span>
                 </a>
               </div>
@@ -725,7 +741,7 @@
               
               <div class="site-state-item site-state-tags">
                 <a href="/tags/index.html">
-                  <span class="site-state-item-count">1</span>
+                  <span class="site-state-item-count">2</span>
                   <span class="site-state-item-name">标签</span>
                 </a>
               </div>
@@ -878,7 +894,7 @@ var ap = new APlayer({
 
 <div class="theme-info">
   <div class="powered-by"></div>
-  <span class="post-count">博客全站共2.8k字</span>
+  <span class="post-count">博客全站共4.4k字</span>
 </div>
 
         
