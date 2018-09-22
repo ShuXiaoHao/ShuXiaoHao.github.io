@@ -149,7 +149,7 @@
 <meta property="og:image" content="http://shuxiaohao.github.io/images/linux/linux3.png">
 <meta property="og:image" content="http://shuxiaohao.github.io/images/linux/linux4.png">
 <meta property="og:image" content="http://shuxiaohao.github.io/images/linux/linux5.png">
-<meta property="og:updated_time" content="2018-09-22T13:00:33.728Z">
+<meta property="og:updated_time" content="2018-09-22T13:54:11.700Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="Linux网络IO模型简介">
 <meta name="twitter:description" content="Linux 的内核将所有外部设备都看做一个文件来操作（一切皆文件），对一个文件的读写操作会调用内核提供的系统命令，返回一个file descriptor（fd，文件描述符）。而对一个socket的读写也会有响应的描述符，称为socket fd（socket文件描述符），描述符就是一个数字，指向内核中的一个结构体（文件路径，数据区等一些属性）。    根据UNIX网络编程对I/O模型的分类，UNIX">
@@ -393,7 +393,7 @@
               
                 <span class="post-meta-item-text">更新于&#58;</span>
               
-              <time title="更新于" itemprop="dateModified" datetime="2018-09-22T21:00:33+08:00">
+              <time title="更新于" itemprop="dateModified" datetime="2018-09-22T21:54:11+08:00">
                 2018-09-22
               </time>
             
@@ -461,10 +461,10 @@
 
       
         <div class="note success"><p>Linux 的内核将所有外部设备都看做一个文件来操作（一切皆文件），对一个文件的读写操作会调用内核提供的系统命令，返回一个<code>file descriptor</code>（fd，文件描述符）。而对一个socket的读写也会有响应的描述符，称为<code>socket fd</code>（socket文件描述符），描述符就是一个数字，指向内核中的一个结构体（文件路径，数据区等一些属性）。<br>    根据UNIX网络编程对I/O模型的分类，UNIX提供了5种I/O模型。</p></div>
-<a id="more"></a>
 <h1 id="IO模型"><a href="#IO模型" class="headerlink" title="IO模型"></a>IO模型</h1><h2 id="阻塞I-O模型"><a href="#阻塞I-O模型" class="headerlink" title="阻塞I/O模型"></a>阻塞I/O模型</h2><blockquote>
 <p>最常用的I/O模型，默认情况下，所有文件操作都是阻塞的。<br> 比如I/O模型下的套接字接口：在进程空间中调用<code>recvfrom</code>，其系统调用直到数据包到达且被复制到应用进程的缓冲区中或者发生错误时才返回，在此期间一直等待。<br> 进程在调用<code>recvfrom</code>开始到它返回的整段时间内都是被阻塞的，所以叫阻塞I/O模型。</p>
 </blockquote>
+ <a id="more"></a>
 <p> <strong>图示：</strong><br><img src="/images/linux/linux1.png" alt=""></p>
 <h2 id="非阻塞I-O模型"><a href="#非阻塞I-O模型" class="headerlink" title="非阻塞I/O模型"></a>非阻塞I/O模型</h2><blockquote>
 <p><code>recvfrom</code>从应用层到内核的时候，就直接返回一个<code>EWOULDBLOCK</code>错误，一般都对非阻塞I/O模型进行轮询检查这个状态，看内核是不是有数据到来。</p>
@@ -854,7 +854,7 @@ var ap = new APlayer({
 
 <div class="theme-info">
   <div class="powered-by"></div>
-  <span class="post-count">博客全站共13.5k字</span>
+  <span class="post-count">博客全站共14.6k字</span>
 </div>
 
         

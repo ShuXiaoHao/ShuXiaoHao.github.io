@@ -385,7 +385,7 @@
               
                 <span class="post-meta-item-text">更新于&#58;</span>
               
-              <time title="更新于" itemprop="dateModified" datetime="2018-09-22T21:00:33+08:00">
+              <time title="更新于" itemprop="dateModified" datetime="2018-09-22T21:54:11+08:00">
                 2018-09-22
               </time>
             
@@ -454,6 +454,9 @@
       
         
           <div class="note success"><p>Linux 的内核将所有外部设备都看做一个文件来操作（一切皆文件），对一个文件的读写操作会调用内核提供的系统命令，返回一个<code>file descriptor</code>（fd，文件描述符）。而对一个socket的读写也会有响应的描述符，称为<code>socket fd</code>（socket文件描述符），描述符就是一个数字，指向内核中的一个结构体（文件路径，数据区等一些属性）。<br>    根据UNIX网络编程对I/O模型的分类，UNIX提供了5种I/O模型。</p></div>
+<h1 id="IO模型"><a href="#IO模型" class="headerlink" title="IO模型"></a>IO模型</h1><h2 id="阻塞I-O模型"><a href="#阻塞I-O模型" class="headerlink" title="阻塞I/O模型"></a>阻塞I/O模型</h2><blockquote>
+<p>最常用的I/O模型，默认情况下，所有文件操作都是阻塞的。<br> 比如I/O模型下的套接字接口：在进程空间中调用<code>recvfrom</code>，其系统调用直到数据包到达且被复制到应用进程的缓冲区中或者发生错误时才返回，在此期间一直等待。<br> 进程在调用<code>recvfrom</code>开始到它返回的整段时间内都是被阻塞的，所以叫阻塞I/O模型。</p>
+</blockquote>
           <!--noindex-->
           <div class="post-button text-center">
             <a class="btn" href="/2018/09/22/Linux网络IO模型简介/#more" rel="contents">
@@ -559,7 +562,7 @@
               
                 <span class="post-meta-item-text">更新于&#58;</span>
               
-              <time title="更新于" itemprop="dateModified" datetime="2018-09-22T21:50:08+08:00">
+              <time title="更新于" itemprop="dateModified" datetime="2018-09-22T22:02:04+08:00">
                 2018-09-22
               </time>
             
@@ -628,6 +631,9 @@
       
         
           <div class="note info"><p>本文是通过学习<code>Netty</code>后对<code>NIO</code>的一些个人总结，从传统的BIO到NIO再到AIO自浅至深介绍，并附上完整的代码讲解。<br>下面代码中会使用这样一个例子：客户端发送一段算式的字符串到服务器，服务器计算后返回结果到客户端。<br>代码的所有说明，都直接作为注释，嵌入到代码中，看代码时就能更容易理解，代码中会用到一个计算结果的工具类，见文章代码部分。<br>相关的基础知识文章推荐：<br>    <em><a href="http://shuxiaohao.github.io/2018/09/22/Linux网络IO模型简介/">Linux 网络 I/O 模型简介（图文</a></em></p></div>
+<h1 id="事件分离器"><a href="#事件分离器" class="headerlink" title="事件分离器"></a>事件分离器</h1><blockquote>
+<p>在IO读写时，把 IO请求 与 读写操作 分离调配进行，需要用到事件分离器。根据处理机制的不同，事件分离器又分为：同步的Reactor和异步的Proactor。</p>
+</blockquote>
           <!--noindex-->
           <div class="post-button text-center">
             <a class="btn" href="/2018/09/22/《Netty学习总结一》NIO/#more" rel="contents">
@@ -1248,7 +1254,7 @@ var ap = new APlayer({
 
 <div class="theme-info">
   <div class="powered-by"></div>
-  <span class="post-count">博客全站共13.5k字</span>
+  <span class="post-count">博客全站共14.6k字</span>
 </div>
 
         
